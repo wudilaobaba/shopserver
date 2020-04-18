@@ -1,0 +1,11 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    url:
+      jdbc:mysql://localhost:3306/whjshop?characterEncoding=utf8&serverTimezone=GMT%2B8
+    username:
+      root
+    password:
+      whjlyn938751

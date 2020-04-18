@@ -1,0 +1,40 @@
+#修改以下active的值会将application-dev.yml以及application-dev.yml中的配置项添加到该文件中
+spring:
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+#      create-drop
+#      none  //不使用模型创建表
+#      update
+
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE #让接口返回的JSON的键以下划线的形式展示
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: true #让接口返回的JSON的时间以时间戳的形式返回
+
+
+#开发环境与生产环境的端口不同
+#server:
+#  port: 8999
+
+whj:
+  api-package: com.whj.shop.shopserver.api
+
+
+#测试用的
+mysql:
+  ip: localhost
+  port: 3306
+
+#hero:
+#  condition: diana
+
+
+wx:
+  appid: wx5e25d9db002859bc
+  appsecret: 735f9c063651319b629abf0da567ebb8
+  code2session: https://api.weixin.qq.com/sns/jscode2session?appid={0}&secret={1}&js_code={2}&grant_type=authorization_code
+

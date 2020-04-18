@@ -1,0 +1,22 @@
+server:
+  port: 8999
+
+spring:
+  datasource:
+    url:
+      jdbc:mysql://localhost:3306/whjshoppro?characterEncoding=utf8&serverTimezone=GMT%2B8
+    username:
+      root
+    password:
+      whjlyn938751
+#下面用来在控制台打印SQL语句
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+shopserver:
+  security:
+    jwt-key: 11111whj,
+    token-expired-in: 86400000

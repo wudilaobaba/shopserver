@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "whj",
+      "type": "com.whj.shop.shopserver.core.configuration.ExceptionCodeConfigertion",
+      "sourceType": "com.whj.shop.shopserver.core.configuration.ExceptionCodeConfigertion"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
